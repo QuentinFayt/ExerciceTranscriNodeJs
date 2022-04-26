@@ -1,0 +1,20 @@
+
+<%- include("nav"); -%>
+<% switch(page){
+    case "accueil":%>
+        <%-include("../main/accueil");-%>
+        <%break;
+    case "presentation":%>
+        <%-include("../main/presentation");-%>
+        <%break;
+    case "realisations":%>
+        <%-include("../main/realisations");-%>
+        <%break;
+    case "aventure":%>
+        <%-include("../main/aventure");-%>
+        <%break;
+        case "404" :%>
+        <%-include("../main/erreur404");-%>
+        <%break;
+}%>
+<%- include("footer"); -%>
